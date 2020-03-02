@@ -1,0 +1,6 @@
+model = kmatrix_poles_poly
+number of poles = 1
+polynomial order = 0
+Chew Mandelstam phase space = false
+adler zero = None
+

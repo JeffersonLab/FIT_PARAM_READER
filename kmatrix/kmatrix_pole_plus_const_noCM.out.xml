@@ -1,0 +1,3806 @@
+<?xml version="1.0"?>
+
+
+<FitSpectrumResult>
+  <Minimum>
+    <IsValid>true</IsValid>
+    <chisq>8.40706664412373</chisq>
+    <nData>14</nData>
+    <nFreeParams>3</nFreeParams>
+    <nDoF>11</nDoF>
+    <nResetDataSV>0</nResetDataSV>
+    <numChisqCalls>329</numChisqCalls>
+    <hesse>false</hesse>
+    <minos>false</minos>
+    <minuitLog>
+Minuit did successfully converge.
+# of function calls: 329
+minimum function Value: 8.407066644124
+minimum edm: 2.007850114362e-08
+minimum internal state vector: LAVector parameters:
+    -0.1220429939191
+    -0.6654105640859
+     0.1282973202121
+
+minimum internal covariance matrix: LASymMatrix parameters:
+  0.00060355602     0.01257787 -7.8662885e-05
+     0.01257787     0.30880832  -0.0013773688
+ -7.8662885e-05  -0.0013773688  1.7305179e-05
+
+
+# ext. ||   Name    ||   type  ||     Value     ||  Error +/- 
+
+   0   ||JP0+_g_pi:pi/1^S_0_pole0 ||  free   ||    -0.1220429939191 ||0.02456737708078
+   1   ||JP0+_gamma_pi:pi/1^S_0|pi:pi/1^S_0_order0 ||  free   ||    -0.6654105640859 ||0.5557052424043
+   2   ||JP0+_m_pole0 ||  free   ||     0.1282973202121 ||0.004159949410898
+
+
+
+
+
+</minuitLog>
+    <MinimumParams>
+      <GlobalParams>
+        <VALUES>
+          <elem>
+            <Key>JP0+_g_pi:pi/1^S_0_pole0</Key>
+            <Val>
+              <value>-0.122042993919139</value>
+              <error>0.0245673770807841</error>
+            </Val>
+          </elem>
+          <elem>
+            <Key>JP0+_gamma_pi:pi/1^S_0|pi:pi/1^S_0_order0</Key>
+            <Val>
+              <value>-0.665410564085919</value>
+              <error>0.555705242404254</error>
+            </Val>
+          </elem>
+          <elem>
+            <Key>JP0+_m_pole0</Key>
+            <Val>
+              <value>0.128297320212077</value>
+              <error>0.00415994941089781</error>
+            </Val>
+          </elem>
+        </VALUES>
+        <CORR>
+          <elem>
+            <Key>
+              <First>JP0+_g_pi:pi/1^S_0_pole0</First>
+              <Second>JP0+_g_pi:pi/1^S_0_pole0</Second>
+            </Key>
+            <Val>1</Val>
+          </elem>
+          <elem>
+            <Key>
+              <First>JP0+_g_pi:pi/1^S_0_pole0</First>
+              <Second>JP0+_gamma_pi:pi/1^S_0|pi:pi/1^S_0_order0</Second>
+            </Key>
+            <Val>0.921305858249793</Val>
+          </elem>
+          <elem>
+            <Key>
+              <First>JP0+_g_pi:pi/1^S_0_pole0</First>
+              <Second>JP0+_m_pole0</Second>
+            </Key>
+            <Val>-0.769702730216105</Val>
+          </elem>
+          <elem>
+            <Key>
+              <First>JP0+_gamma_pi:pi/1^S_0|pi:pi/1^S_0_order0</First>
+              <Second>JP0+_g_pi:pi/1^S_0_pole0</Second>
+            </Key>
+            <Val>0.921305858249793</Val>
+          </elem>
+          <elem>
+            <Key>
+              <First>JP0+_gamma_pi:pi/1^S_0|pi:pi/1^S_0_order0</First>
+              <Second>JP0+_gamma_pi:pi/1^S_0|pi:pi/1^S_0_order0</Second>
+            </Key>
+            <Val>1</Val>
+          </elem>
+          <elem>
+            <Key>
+              <First>JP0+_gamma_pi:pi/1^S_0|pi:pi/1^S_0_order0</First>
+              <Second>JP0+_m_pole0</Second>
+            </Key>
+            <Val>-0.595823605952632</Val>
+          </elem>
+          <elem>
+            <Key>
+              <First>JP0+_m_pole0</First>
+              <Second>JP0+_g_pi:pi/1^S_0_pole0</Second>
+            </Key>
+            <Val>-0.769702730216105</Val>
+          </elem>
+          <elem>
+            <Key>
+              <First>JP0+_m_pole0</First>
+              <Second>JP0+_gamma_pi:pi/1^S_0|pi:pi/1^S_0_order0</Second>
+            </Key>
+            <Val>-0.595823605952632</Val>
+          </elem>
+          <elem>
+            <Key>
+              <First>JP0+_m_pole0</First>
+              <Second>JP0+_m_pole0</Second>
+            </Key>
+            <Val>1</Val>
+          </elem>
+        </CORR>
+      </GlobalParams>
+    </MinimumParams>
+  </Minimum>
+
+
+<FitFiniteVolumeSpectrum>
+  <EcmData>../f0_elastic_levels.xml</EcmData>
+  <Amplitudes>kmatrix.amp.xml</Amplitudes>
+  <Params>kmatrix.params.ini.xml</Params>
+
+  <Hadrons>../hadrons.xml</Hadrons>
+  <Splines>../f0_elastic_splines.xml</Splines>
+
+
+  <FitSpectrumOptions>
+    <ecm_max>0.17</ecm_max>
+    <ecm_ranges>
+      <elem>0.05 0.17</elem>
+    </ecm_ranges>
+
+    <n_subdivs>100</n_subdivs>
+    <effort>2</effort>
+
+    <verbose>true</verbose>
+
+    <minuit_type>MnMigrad</minuit_type>
+    <minuit_strategy>2</minuit_strategy>
+    <set_minuit_precision>true</set_minuit_precision>
+    <minuit_precision>1.0e-10</minuit_precision>
+
+    <minos>false</minos>
+
+    <chisq_evals_filename>kmatrix_pole_and_const_noCM.chisqs.xml</chisq_evals_filename>
+    <output_filename>kmatrix_pole_and_const_noCM.out.xml</output_filename>
+
+  </FitSpectrumOptions>
+
+  
+
+</FitFiniteVolumeSpectrum>
+
+
+
+<Amplitudes>
+      <PartialWaves>
+        <elem>
+          <twoJ>0</twoJ>
+          <P>+1</P>
+          <model>kmatrix_poles_poly</model>
+          <fixed_params>
+            <Channels>
+              <elem>
+                <hadron1>pi</hadron1>
+                <hadron2>pi</hadron2>
+                <twoS>0</twoS>
+                <ell>0</ell>
+                <twoJ>0</twoJ>
+              </elem>
+            </Channels>
+            <n_poles>1</n_poles>
+            <poly_order>0</poly_order>
+            <chew_man>false</chew_man>
+            <!-- <chew_man_sub_point>pole0</chew_man_sub_point> -->
+            <!-- <adler_zero_s>0.0007715</adler_zero_s> -->
+          </fixed_params>
+        </elem>
+      </PartialWaves>
+    </Amplitudes>
+
+
+
+<Hadrons>
+      <elem>
+        <name>pi</name>
+        <twoS>0</twoS>
+        <parity>-1</parity>
+        <mass>0.03928</mass>
+        <mass_err>0.0</mass_err>
+      </elem>
+      <elem>
+        <name>kaon</name>
+        <twoS>0</twoS>
+        <parity>-1</parity>
+        <mass>0.08344</mass>
+        <mass_err>0.0</mass_err>
+      </elem>
+    </Hadrons>
+
+
+
+<Params>
+      <PartialWaveParams>
+        <elem>
+          <twoJ>0</twoJ>
+          <P>+1</P>
+          <params>
+            <elem>
+              <name>m_pole0</name>
+              <value>0.25</value>
+              <error>0.1</error>
+            </elem>
+            <elem>
+              <name>g_pi:pi/1^S_0_pole0</name>
+              <value>-2.2</value>
+              <error>0.2</error>
+            </elem>
+            <elem>
+              <name>gamma_pi:pi/1^S_0|pi:pi/1^S_0_order0</name>
+              <value>0.0</value>
+              <error>10.0</error>
+              <fixed>false</fixed>
+            </elem>
+            <!--	<elem>
+          <name>gamma_pi:pi/1^S_0|pi:pi/1^S_0_order1</name>
+          <value>0.</value>
+	  <error>100.</error>
+          </elem>
+	  -->
+          </params>
+        </elem>
+      </PartialWaveParams>
+    </Params>
+
+
+
+<Ecm_data>
+      <MetaData>
+        <Xi>3.453</Xi>
+        <Xi_err>0.006</Xi_err>
+        <Comments/>
+      </MetaData>
+      <Energy_Levels>
+        <elem>
+          <Key>V32</Key>
+          <Val>
+            <DATA>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 0 0</d>
+                  <irrep>A1p</irrep>
+                  <level_num>0</level_num>
+                </Key>
+                <Val>
+                  <value>0.0756837509278317</value>
+                  <error>0.000649224961830812</error>
+                  <stat_error>0.000649224961828267</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 0 0</d>
+                  <irrep>A1p</irrep>
+                  <level_num>1</level_num>
+                </Key>
+                <Val>
+                  <value>0.117470081649487</value>
+                  <error>0.00150000000000545</error>
+                  <stat_error>0.00108645127966871</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 0 1</d>
+                  <irrep>A1</irrep>
+                  <level_num>0</level_num>
+                </Key>
+                <Val>
+                  <value>0.0852204509747303</value>
+                  <error>0.00192460962257745</error>
+                  <stat_error>0.00109895283162247</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 0 1</d>
+                  <irrep>A1</irrep>
+                  <level_num>1</level_num>
+                </Key>
+                <Val>
+                  <value>0.122194953424269</value>
+                  <error>0.00168246847659685</error>
+                  <stat_error>0.00168171662837413</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 0 2</d>
+                  <irrep>A1</irrep>
+                  <level_num>0</level_num>
+                </Key>
+                <Val>
+                  <value>0.0784902668445078</value>
+                  <error>0.00161012394105282</error>
+                  <stat_error>0.00104140136078893</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 0 2</d>
+                  <irrep>A1</irrep>
+                  <level_num>1</level_num>
+                </Key>
+                <Val>
+                  <value>0.105799165937709</value>
+                  <error>0.00140870293980768</error>
+                  <stat_error>0.00139257253158005</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 0 2</d>
+                  <irrep>A1</irrep>
+                  <level_num>2</level_num>
+                </Key>
+                <Val>
+                  <value>0.125071070835071</value>
+                  <error>0.00175283397488454</error>
+                  <stat_error>0.00174376399165957</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 0 2</d>
+                  <irrep>A1</irrep>
+                  <level_num>3</level_num>
+                </Key>
+                <Val>
+                  <value>0.142431761501035</value>
+                  <error>0.00344100656621989</error>
+                  <stat_error>0.0034372596994254</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 1 1</d>
+                  <irrep>A1</irrep>
+                  <level_num>0</level_num>
+                </Key>
+                <Val>
+                  <value>0.0949292842431963</value>
+                  <error>0.00262383511772212</error>
+                  <stat_error>0.00211151849045022</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 1 1</d>
+                  <irrep>A1</irrep>
+                  <level_num>1</level_num>
+                </Key>
+                <Val>
+                  <value>0.109595225384231</value>
+                  <error>0.000776562025899943</error>
+                  <stat_error>0.000769748439949199</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 1 1</d>
+                  <irrep>A1</irrep>
+                  <level_num>2</level_num>
+                </Key>
+                <Val>
+                  <value>0.136568149344327</value>
+                  <error>0.00290238973645529</error>
+                  <stat_error>0.00163175427287249</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>0 1 1</d>
+                  <irrep>A1</irrep>
+                  <level_num>3</level_num>
+                </Key>
+                <Val>
+                  <value>0.158301609035672</value>
+                  <error>0.000900110702231997</error>
+                  <stat_error>0.000666662106188014</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>1 1 1</d>
+                  <irrep>A1</irrep>
+                  <level_num>0</level_num>
+                </Key>
+                <Val>
+                  <value>0.0971994455325744</value>
+                  <error>0.00214248426653622</error>
+                  <stat_error>0.00156445473493349</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+              <elem>
+                <Key>
+                  <V>32</V>
+                  <d>1 1 1</d>
+                  <irrep>A1</irrep>
+                  <level_num>1</level_num>
+                </Key>
+                <Val>
+                  <value>0.115525504494017</value>
+                  <error>0.00132216367978252</error>
+                  <stat_error>0.000937874028058687</stat_error>
+                  <comment/>
+                </Val>
+              </elem>
+            </DATA>
+            <CORR>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.250452059627721</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.347478524574137</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0789348960679531</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.270588139061857</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.107834823648492</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.160734227407308</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.132417036142488</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.267633399006535</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.438138533923867</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.165238593190842</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.372336943725584</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.277891468356769</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.327461233706623</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.250452059627721</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.0388464064444586</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0634023801814637</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.234614962703717</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.160771410675284</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0798471594885852</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.137664113414258</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.155524192693815</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.265695423814304</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0444991526790339</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0838177421641213</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.186435632775374</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.314061379320949</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.347478524574137</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.0388464064444586</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.466035545887548</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.225048421066839</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.12778684823607</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.1900862041776</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.00170098330349397</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.108385473265549</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.361803235364996</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.239054416160339</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.328101807655919</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.148641574940388</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.223898906608676</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0789348960679531</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0634023801814637</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.466035545887548</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.274254684524546</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.120377799856546</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.000164094492143713</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.00573499159932055</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.00683091160419152</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.281286263344904</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.195062050429706</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.230302192817983</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.101201997722498</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.237104556008276</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.270588139061857</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.234614962703717</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.225048421066839</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.274254684524546</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.683272793402554</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.212481450426197</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.0032972615961939</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0911948860324387</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.501763260640857</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.123307224226586</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.215103073016618</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.314655712565499</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.418516497239062</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.107834823648492</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.160771410675284</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.12778684823607</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.120377799856546</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.683272793402554</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.249086717529147</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0989629127765314</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.120735853907923</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.359208159132484</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0807897971603511</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.104081770931852</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.191928425897568</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.310136626365095</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.160734227407308</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0798471594885852</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.1900862041776</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.000164094492143713</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.212481450426197</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.249086717529147</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0328379692623573</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0814335045372007</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.139811093190205</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0597489438993139</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0502410290388279</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0148878441652939</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0950755754352505</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.132417036142488</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.137664113414258</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.00170098330349397</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.00573499159932055</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.0032972615961939</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0989629127765314</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0328379692623573</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.194202033482553</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0712691222317602</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.0466618531675174</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0137173694459341</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.227264917602168</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.127956526975097</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.267633399006535</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.155524192693815</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.108385473265549</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.00683091160419152</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0911948860324387</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.120735853907923</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0814335045372007</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.194202033482553</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.433750087503814</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.20277900572926</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.101069867973042</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.186543466459429</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.198913601383144</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.438138533923867</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.265695423814304</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.361803235364996</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.281286263344904</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.501763260640857</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.359208159132484</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.139811093190205</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0712691222317602</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.433750087503814</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.514280366831991</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.557230436844329</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.328966948840186</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.519525440332647</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.165238593190842</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0444991526790339</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.239054416160339</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.195062050429706</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.123307224226586</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0807897971603511</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0597489438993139</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>-0.0466618531675174</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.20277900572926</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.514280366831991</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.297630012331495</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.109079611693197</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.161319909136635</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.372336943725584</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0838177421641213</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.328101807655919</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.230302192817983</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.215103073016618</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.104081770931852</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0502410290388279</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0137173694459341</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.101069867973042</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.557230436844329</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.297630012331495</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.265998256694033</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.278036410442944</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.277891468356769</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.186435632775374</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.148641574940388</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.101201997722498</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.314655712565499</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.191928425897568</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0148878441652939</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.227264917602168</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.186543466459429</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.328966948840186</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.109079611693197</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.265998256694033</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.575022167657491</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.327461233706623</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 0</d>
+                    <irrep>A1p</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.314061379320949</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.223898906608676</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.237104556008276</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.418516497239062</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.310136626365095</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.0950755754352505</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 0 2</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.127956526975097</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.198913601383144</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>0.519525440332647</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>2</level_num>
+                  </Second>
+                </Key>
+                <Val>0.161319909136635</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>0 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>3</level_num>
+                  </Second>
+                </Key>
+                <Val>0.278036410442944</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>0</level_num>
+                  </Second>
+                </Key>
+                <Val>0.575022167657491</Val>
+              </elem>
+              <elem>
+                <Key>
+                  <First>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </First>
+                  <Second>
+                    <V>32</V>
+                    <d>1 1 1</d>
+                    <irrep>A1</irrep>
+                    <level_num>1</level_num>
+                  </Second>
+                </Key>
+                <Val>1</Val>
+              </elem>
+            </CORR>
+          </Val>
+        </elem>
+      </Energy_Levels>
+    </Ecm_data>
+
+
+
+</FitSpectrumResult>

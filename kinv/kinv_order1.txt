@@ -1,0 +1,8 @@
+model = kmatrix_inv_poly
+polynomial order = pi:pi/1^S_0|pi:pi/1^S_0 POLYORDER= 1
+
+Chew Mandelstam phase space = true
+   subtraction point = threshold
+
+adler zero = None
+
